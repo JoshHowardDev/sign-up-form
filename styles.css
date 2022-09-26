@@ -34,7 +34,7 @@ body {
     justify-content: center;
     font-family: 'Rubik Dirt', cursive;
     color: white;
-    font-size: 5rem;
+    font-size: 5vw;
     height: 20vh;
     position: relative;
     top: 20%;
@@ -45,7 +45,7 @@ body {
 }
 
 #odinLogo {
-    height: 20vh;
+    height: 9vw;
     width: auto;
 }
 
@@ -53,6 +53,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom: linear-gradient(grey, white)
 }
 
 .formContainer {
@@ -60,6 +63,52 @@ body {
     flex-wrap: wrap;
 }
 
+.formTitleTxt {
+    margin-left: 10px;
+}
+
+.inputs {
+    width: 40vw;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 li {
     list-style-type: none;
+    width: 250px;
+    margin: 5px;
+}
+
+input {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+
+.pw:invalid {
+    border-color: red;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #13abdd;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #13abdd;
+}
+
+button {
+    width: 300px;
+    height: 60px;
+    background-color: rgba(36, 36, 68, 0.842);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(36, 36, 68, 0.842);
+}
+
+.alreadyAccount {
+    display: inline;
 }
