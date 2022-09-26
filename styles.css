@@ -1,0 +1,65 @@
+:root, body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.logoContainer {
+    width: 33vw;
+    height: 100vh;
+    flex: 1, 0, auto;
+    background-image: url("images/mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.formContainer {
+    width: 66vw;
+    height: 100vh; 
+    padding-left: 5vw;
+    padding-right: 5vw;
+    flex: 1, 0, auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik Dirt', cursive;
+    color: white;
+    font-size: 5rem;
+    height: 20vh;
+    position: relative;
+    top: 20%;
+}
+
+#logoTxt {
+    align-self: center;
+}
+
+#odinLogo {
+    height: 20vh;
+    width: auto;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
+}
